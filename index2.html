@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <style>
+    
+  </style>
+</head>
+
+<body class="bg-[#14171F] text-white font-['Playfair_Display']">
+  <!-- Hero Section -->
+  <section class="relative w-full bg-[#14171F] overflow-hidden">
+
+    <!-- Background Vector -->
+    <img src="assets/first_sec_vector.png" alt="vector"
+         class="absolute inset-0 w-full h-full object-cover z-0" />
+
+    <!-- Navbar -->
+    <div class="relative z-10 flex items-center justify-between px-8 py-4 bg-[#14171F]/80">
+      <!-- Logo -->
+      <div class="w-[122px] h-[22px]">
+        <img src="assets/logo.png" alt="logo" class="w-full h-full object-contain" />
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="flex space-x-8 font-medium text-sm">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Stories</a>
+        <a href="#">Queries</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <!-- Notification & Account -->
+      <div class="flex items-center space-x-4">
+        <img src="assets/notification.png" alt="notification" class="w-8 h-8" />
+        <div class="flex items-center space-x-2 text-sm">
+          <div class="w-6 h-6 bg-white rounded-full"></div>
+          <span>Account</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 flex justify-between items-start px-16 pt-[160px] pb-32 flex-wrap gap-10">
+      <!-- Left Section: Name + Tagline -->
+      <div class="max-w-xl">
+        <h1 class="text-6xl font-semibold">Yogita Kumari</h1>
+        <p class="text-3xl text-gray-300 mt-4">Designing intuitive experiences with purpose</p>
+      </div>
+
+      <!-- Right Section: Profile Image -->
+      <div>
+        <img src="assets/profile.png" alt="profile" class="w-[420px] h-[420px] object-contain" />
+      </div>
+    </div>
+
+    <!-- Glassmorphic Card + Summary -->
+    <div class="relative z-10 flex justify-between gap-20 items-start px-16 pb-32 flex-wrap">
+      <!-- Glass Card -->
+      <div class="max-w-lg p-8 rounded-2xl bg-[#2AB5DC]/20 backdrop-blur-md border border-white/20">
+        <h2 class="text-2xl font-semibold mb-6">Overview</h2>
+        <div class="grid grid-cols-2 gap-6 mb-6 text-white/80">
+          <div class="space-y-3">
+            <p>Email</p><p>Phone</p><p>DOB</p><p>Nationality</p><p>Address</p>
+            <p class="text-sm">Apt. 609 84187 Katelyn Turnpike,<br>West Lashayport, NM 41184</p>
+          </div>
+          <div class="space-y-3 font-medium text-white">
+            <p>emailid@gmail.com</p><p>65464XXXXX</p><p>dd/mm/yyyy</p><p>Indian</p>
+            <p class="invisible">Address placeholder</p>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <h3 class="text-xl font-semibold mb-4">Skills</h3>
+        <div class="grid grid-cols-2 gap-3 mb-6">
+          <div class="bg-white/10 p-2 rounded-md text-center">Figma</div>
+          <div class="bg-white/10 p-2 rounded-md text-center">Figma</div>
+          <div class="bg-white/10 p-2 rounded-md text-center">Figma</div>
+          <div class="bg-white/10 p-2 rounded-md text-center">Figma</div>
+          <div class="bg-white/10 p-2 rounded-md text-center">Figma</div>
+          <div class="bg-white/10 p-2 rounded-md text-center">Figma</div>
+        </div>
+
+        <!-- Resume Info -->
+        <div class="flex justify-between mb-4">
+          <p class="font-semibold">Resume Score</p>
+          <p>No idea</p>
+        </div>
+        <div class="flex justify-between mb-6">
+          <p class="font-semibold">ATS Match</p>
+          <p>No idea</p>
+        </div>
+
+        <!-- Links -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-md">
+            <img src="assets/linkdin.png" class="w-5 h-5" />
+            <span>LinkedIn</span>
+          </div>
+          <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-md">
+            <img src="assets/github.png" class="w-5 h-5" />
+            <span>GitHub</span>
+          </div>
+          <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-md">
+            <img src="assets/kaggle.png" class="w-5 h-5" />
+            <span>Kaggle</span>
+          </div>
+          <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-md">
+            <img src="assets/portfolio.png" class="w-5 h-5" />
+            <span>Portfolio</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="max-w-xl mt-6">
+        <h2 class="text-5xl font-semibold mb-4">Professional Summary</h2>
+        <p class="text-white/80 text-2xl leading-relaxed">
+          Motivated and detail-oriented Computer Science undergraduate with hands-on experience in full-stack development,
+          team leadership, and project management. Skilled in combining technical knowledge with creativity and communication,
+          making ideas both functional and user-friendly.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Education -->
+  <section class="relative z-10 max-w-[1770px] mx-auto mt-[-60px] p-8 rounded-2xl bg-[#2AB5DC]/20 backdrop-blur-xl border border-white/20">
+    <h2 class="text-2xl font-semibold mb-4">Education</h2>
+    <hr class="border-white/30 mb-6" />
+
+    <!-- Card 1 -->
+    <div class="flex items-start space-x-6 mb-10">
+      <div class="min-w-[80px]">
+        <img src="assets/iitm_logi.png" class="w-20 h-20 object-contain" />
+      </div>
+      <div class="flex-1 space-y-2">
+        <div class="flex justify-between">
+          <p class="text-lg font-semibold">Indian Institute of Information Technology</p>
+          <img src="assets/edit.png" class="w-5 h-5 cursor-pointer" />
+        </div>
+        <p>B.Tech, CSE</p>
+        <p>Sep 2023 – Mar 2027</p>
+        <p>Grade – 8.00</p>
+        <p class="text-white/80">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline">https://iiitmanipur.ac.in/</a>
+        <div class="flex justify-between items-center mt-2 text-sm text-white/90">
+          <div class="flex gap-4">
+            <p>AI Focused Curriculum</p>
+            <p>Research-led Program</p>
+          </div>
+          <img src="assets/share.png" class="w-5 h-5 cursor-pointer" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flex items-start space-x-6">
+      <div class="min-w-[80px]">
+        <img src="assets/alive_hire_logo.png" class="w-16 h-16 object-contain" />
+      </div>
+      <div class="flex-1 space-y-2">
+        <div class="flex justify-between">
+          <p class="text-lg font-semibold">Indian Institute of Information Technology</p>
+          <img src="assets/edit.png" class="w-5 h-5 cursor-pointer" />
+        </div>
+        <p>B.Tech, CSE</p>
+        <p>Sep 2023 – Mar 2027</p>
+        <p>Grade – 8.00</p>
+        <p class="text-white/80">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline">https://iiitmanipur.ac.in/</a>
+        <div class="flex justify-between items-center mt-2 text-sm text-white/90">
+          <div class="flex gap-4">
+            <p>AI Focused Curriculum</p>
+            <p>Research-led Program</p>
+          </div>
+          <img src="assets/share.png" class="w-5 h-5 cursor-pointer" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--section 3-->
+   <section class="relative z-10 max-w-[1770px] mx-auto mt-[70px] p-8 rounded-2xl bg-[#2AB5DC]/20 backdrop-blur-xl border border-white/20">
+  
+  <!-- Section Title -->
+  <p class="text-2xl font-semibold mb-4">Skill stack</p>
+  <hr class="border-white/30 mb-6" />
+
+<!-- Section Title -->
+<p class="text-2xl font-semibold mb-4">Languages</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">Frameworks & Libraries</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">Frtend Technologieson</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">Backend Technologies</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">Databases</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">Cloud/DevOps</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">Tools & Others</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">CoreSkills/Top 5 Highlights</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+</div>
+
+
+</section>
+
+
+<!--section 4-->
+<!-- Outer flex container with padding -->
+  <section class="relative z-10 max-w-[1770px] mx-auto mt-[70px] p-8 rounded-2xl bg-[#14171F]  ">
+    <p class="text-2xl font-semibold mb-4">Certifications</p>
+  <hr class="border-white/30 mb-6" />
+
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Graphic Design Artist</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Mentored 50+ underprivileged students in basic programming</p>
+      <p>Ahouba IIITM</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Outer flex container with padding -->
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Graphic Design Artist</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Mentored 50+ underprivileged students in basic programming</p>
+      <p>Ahouba IIITM</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!--section 5-->
+<!-- Outer flex container with padding -->
+    <section class="relative z-10 max-w-[1770px] mx-auto mt-[70px] p-8 rounded-2xl bg-[#2AB5DC]/20 backdrop-blur-xl border border-white/20">
+        <p class="text-2xl font-semibold mb-4">experience</p>
+  <hr class="border-white/30 mb-6" />
+
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Graphic Design Artist</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Mentored 50+ underprivileged students in basic programming</p>
+      <p>Ahouba IIITM</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+       <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+       <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+       <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Outer flex container with padding -->
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Graphic Design Artist</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Mentored 50+ underprivileged students in basic programming</p>
+      <p>Ahouba IIITM</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+       <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+       <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+       <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+<!--section 6-->
+<!-- Outer flex container with padding -->
+  <!-- Section 6: Experience -->
+<section class="relative z-10 max-w-[1770px] mx-auto mt-[70px] p-8 rounded-2xl bg-[#14171F] text-white">
+  <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+  <hr class="border-white/30 mb-8" />
+
+  <!-- Project Item 1 -->
+  <div class="mb-10 p-6 rounded-xl bg-[#2AB5DC]/10 border border-white/20">
+    <!-- Title & Edit Icon -->
+    <div class="flex justify-between items-start mb-2">
+      <p class="text-xl font-semibold">Portfolio Website</p>
+      <img src="assets/edit.png" alt="Edit" class="w-5 h-5" />
+    </div>
+
+    <!-- Description & Link -->
+    <p class="text-white/80 mb-2">Developed personal portfolio website to showcase projects and experience</p>
+    <a href="#" class="text-[#2AB5DC] underline mb-4 inline-block">Live link</a>
+
+    <!-- Tech Stack + Share -->
+    
+      <div class="flex flex-wrap justify-between items-center gap-y-4">
+        <div class="bg-white/10 px-3 py-1 rounded-md">React</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">Typescript</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">Typescript</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">Typescript</div>
+        <img src="assets/share.png" alt="Share" class="w-5 h-5" />
+      </div>
+      
+    
+  </div>
+
+  <!-- Projects  Item 2 -->
+  <div class="mb-10 p-6 rounded-xl bg-[#2AB5DC]/10 border border-white/20">
+    <div class="flex justify-between items-start mb-2">
+      <p class="text-xl font-semibold">Portfolio Website</p>
+      <img src="assets/edit.png" alt="Edit" class="w-5 h-5" />
+    </div>
+    <p class="text-white/80 mb-2">Developed personal portfolio website to showcase projects and experience</p>
+    <a href="#" class="text-[#2AB5DC] underline mb-4 inline-block">Live link</a>
+
+    <div class="flex flex-wrap justify-between items-center gap-y-4">
+      
+        <div class="bg-white/10 px-3 py-1 rounded-md">React</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">Typescript</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">Typescript</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">Typescript</div>
+      
+      <img src="assets/share.png" alt="Share" class="w-5 h-5" />
+    </div>
+  </div>
+  <!--project item 3-->
+  <div class="mb-10 p-6 rounded-xl bg-[#2AB5DC]/10 border border-white/20">
+    <!-- Title & Edit Icon -->
+    <div class="flex justify-between items-start mb-2">
+      <p class="text-xl font-semibold">Portfolio Website</p>
+      <img src="assets/edit.png" alt="Edit" class="w-5 h-5" />
+    </div>
+
+    <!-- Description & Link -->
+    <p class="text-white/80 mb-2">Developed personal portfolio website to showcase projects and experience</p>
+    <a href="#" class="text-[#2AB5DC] underline mb-4 inline-block">Live link</a>
+
+    <!-- Tech Stack + Share -->
+    
+      <div class="flex flex-wrap justify-between items-center gap-y-4">
+        <div class="bg-white/10 px-3 py-1 rounded-md">React</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">Typescript</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">Typescript</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">Typescript</div>
+        <img src="assets/share.png" alt="Share" class="w-5 h-5" />
+      </div>
+      
+    
+  </div>
+</section>
+
+<!--section 7-->
+<!-- Outer flex container with padding -->
+   <section class="relative z-10 max-w-[1770px] mx-auto mt-[70px] p-8 rounded-2xl bg-[#2AB5DC]/20 backdrop-blur-xl border border-white/20">
+    <p class="text-2xl font-semibold mb-4">Awards & Achievements</p>
+  <hr class="border-white/30 mb-6" />
+
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Title</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Metaline</p>
+      <p>organization</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+      <div class="flex flex-wrap justify-between items-center gap-y-4">
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <img src="assets/share.png" alt="Share" class="w-5 h-5" />
+      </div>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Outer flex container with padding -->
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Title</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Metaline</p>
+      <p>organization</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+      <div class="flex flex-wrap justify-between items-center gap-y-4">
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <img src="assets/share.png" alt="Share" class="w-5 h-5" />
+      </div>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+<!--section 8-->
+<!-- Outer flex container with padding -->
+   <section class="relative z-10 max-w-[1770px] mx-auto mt-[70px] p-8  bg-[#14171F]">
+    <p class="text-2xl font-semibold mb-4">Volunteer Work</p>
+  <hr class="border-white/30 mb-6" />
+
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Title</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Metaline</p>
+      <p>organization</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+      <div class="flex flex-wrap justify-between items-center gap-y-4">
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <img src="assets/share.png" alt="Share" class="w-5 h-5" />
+      </div>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Outer flex container with padding -->
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Title</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Metaline</p>
+      <p>organization</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+      <div class="flex flex-wrap justify-between items-center gap-y-4">
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <img src="assets/share.png" alt="Share" class="w-5 h-5" />
+      </div>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+ <section class="relative z-10 max-w-[1770px] mx-auto mt-[70px] p-8 rounded-2xl bg-[#2AB5DC]/20 backdrop-blur-xl border border-white/20">
+    <p class="text-2xl font-semibold mb-4">Languages</p>
+  <hr class="border-white/30 mb-6" />
+
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Title</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Metaline</p>
+      <p>organization</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+     
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Outer flex container with padding -->
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Title</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Metaline</p>
+      <p>organization</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+<!--section 9-->
+<!-- Outer flex container with padding -->
+   <section class="relative z-10 max-w-[1770px] mx-auto mt-[70px] p-8  bg-[#14171F]">
+    <p class="text-2xl font-semibold mb-4">Publications</p>
+  <hr class="border-white/30 mb-6" />
+
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Title</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Metaline</p>
+      <p>organization</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+      <div class="flex flex-wrap justify-between items-center gap-y-4">
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <img src="assets/share.png" alt="Share" class="w-5 h-5" />
+      </div>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+   
+
+  </div>
+</div>
+<!-- Outer flex container with padding -->
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Title</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Metaline</p>
+      <p>organization</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+      <div class="flex flex-wrap justify-between items-center gap-y-4">
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <div class="bg-white/10 px-3 py-1 rounded-md">tags</div>
+        <img src="assets/share.png" alt="Share" class="w-5 h-5" />
+      </div>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    
+
+  </div>
+</div>
+</section>
+
+   <section class="relative z-10 max-w-[1770px] mx-auto mt-[70px] p-8  bg-[#14171F]">
+    <section class="relative z-10 max-w-[1770px] mx-auto mt-[70px] p-8 rounded-2xl bg-[#14171F] text-white"></section>
+    <div class="flex items-start gap-3">
+      <div class="w-[100px] h-[600px] "></div>
+      <div class="w-[100px] h-[600px]"></div>
+    </div>
+</section>
+
+
+
+
+
+</body>
+</html>

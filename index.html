@@ -1,1 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AliveHire - Coming Soon</title>
 
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Alpine.js -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <style>
+    .glassmorphic-card {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+  </style>
+</head>
+<body class="bg-[#14171F] text-white font-['Playfair_Display']">
+  <div class="w-full overflow-x-hidden">
+    <!-- First Section - Hero Area -->
+<div class="relative w-full min-h-screen overflow-hidden bg-[#14171F] text-white">
+
+  <!-- ✅ Background Image -->
+  <div class="relative w-full  ">
+    <img src="assets/first_sec_vector.png" alt="vector" class="w-full object-cover" />
+  </div>
+
+  <!-- ✅ Navbar on top with overlap and z-index -->
+  <div class=" bg-[#14171F] absolute top-[30px] left-0 w-full flex items-center justify-between px-8 py-4 z-50">
+    <!-- Logo -->
+    <div class="w-[122px] h-[22px]">
+      <img src="assets/logo.png" alt="logo" class="w-full h-full object-contain" />
+    </div>
+
+    <!-- Center Links -->
+    <div class="flex space-x-8 font-medium text-sm">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Stories</a>
+      <a href="#">Queries</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Notification + Account -->
+    <div class="flex items-center space-x-4">
+      <img src="assets/notification.png" alt="notification" class="w-8 h-8" />
+      <div class="flex items-center space-x-2 text-sm">
+        <div class="w-6 h-6 bg-white rounded-full"></div> <!-- Avatar -->
+        <div>Account</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+       
+
+         <div class="absolute top-[400px] left-[330px] transform -translate-x-1/2  z-50">
+    <div class="text-6xl font-semibold">Yogita Kumari</div>
+    <div class="text-3xl text-gray-300 mt-2">Designing intuitive experiences with purpose</div>
+  </div>
+        <img src="assets/profile.png" alt="profile" class="absolute top-[500px] right-[220px] w-[530px] h-[500px]">
+      <!-- ✅ Side-by-side: Glassmorphic Card + Professional Summary -->
+<!-- Container below hero -->
+<div class="absolute top-[800px] left-[160px] z-40 mt-16 px-[120px] flex gap-20 items-start">
+
+  <!-- 🌫️ Glassmorphic Card -->
+  <div class="max-w-lg p-8 rounded-2xl bg-[#2AB5DC]/20 backdrop-blur-md border border-white/20 text-white">
+    <!-- Overview -->
+    <h2 class="text-2xl font-semibold mb-6">Overview</h2>
+    <div class="grid grid-cols-2 gap-6 mb-6">
+      <div class="space-y-3 text-white/80">
+        <p>Email</p><p>Phone</p><p>DOB</p><p>Nationality</p><p>Address</p>
+        <p class="text-sm">Apt. 609 84187 Katelyn Turnpike,<br>West Lashayport, NM 41184</p>
+      </div>
+      <div class="space-y-3 font-medium">
+        <p>emailid@gmail.com</p><p>65464XXXXX</p><p>dd/mm/yyyy</p><p>Indian</p>
+        <p class="invisible">Address placeholder</p>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <h3 class="text-xl font-semibold mb-4">Skills</h3>
+    <div class="grid grid-cols-2 gap-3 mb-6">
+      <div class="bg-white/10 p-2 rounded-md text-center">Figma</div>
+      <div class="bg-white/10 p-2 rounded-md text-center">Figma</div>
+      <div class="bg-white/10 p-2 rounded-md text-center">Figma</div>
+      <div class="bg-white/10 p-2 rounded-md text-center">Figma</div>
+      <div class="bg-white/10 p-2 rounded-md text-center">Figma</div>
+      <div class="bg-white/10 p-2 rounded-md text-center">Figma</div>
+    </div>
+
+    <!-- Resume + ATS -->
+    <div class="flex justify-between items-center mb-4">
+      <p class="font-semibold">Resume Score</p>
+      <div>No idea</div>
+    </div>
+    <div class="flex justify-between items-center mb-6">
+      <p class="font-semibold">ATS Match</p>
+      <div>No idea</div>
+    </div>
+
+    <!-- Links -->
+    <div class="grid grid-cols-2 gap-4">
+      <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-md">
+        <img src="assets/linkdin.png" class="w-5 h-5" alt="LinkedIn" />
+        <span>LinkedIn</span>
+      </div>
+      <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-md">
+        <img src="assets/github.png" class="w-5 h-5" alt="GitHub" />
+        <span>GitHub</span>
+      </div>
+      <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-md">
+        <img src="assets/kaggle.png" class="w-5 h-5" alt="Kaggle" />
+        <span>Kaggle</span>
+      </div>
+      <div class="flex items-center space-x-2 bg-white/10 p-3 rounded-md">
+        <img src="assets/portfolio.png" class="w-5 h-5" alt="Portfolio" />
+        <span>Portfolio</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 📄 Professional Summary -->
+  <div class="max-w-xl mt-4 relative top-[200px]">
+    <h2 class="text-6xl font-semibold mb-4">Professional Summary</h2>
+    <p class="text-white/80 text-2xl leading-relaxed">
+      Motivated and detail-oriented Computer Science undergraduate with hands-on experience in full-stack development,
+      team leadership, and project management. Skilled in combining technical knowledge with creativity and communication,
+      making ideas both functional and user-friendly.
+    </p>
+  </div>
+</div>
+
+
+      
+    </div>
+    <!--second section-->
+  <!-- ✅ Second Section - Education -->
+<div class="relative left-[30px] top-[-200px] max-w-[1770px] p-8 rounded-2xl bg-[#2AB5DC] bg-opacity-20 backdrop-blur-xl border border-white/20 text-white mt-[100px]">
+  
+  <!-- Section Title -->
+  <p class="text-2xl font-semibold mb-4">Education</p>
+  <hr class="border-white/30 mb-6" />
+
+  <!-- ✅ Education Card 1 -->
+  <div class="flex items-start space-x-6 mb-10">
+    <!-- College Logo -->
+    <div class="min-w-[80px]">
+      <img src="assets/iitm_logi.png" alt="college1" class="w-30 h-30 object-contain" />
+    </div>
+
+    <!-- Right Info -->
+    <div class="flex-1 space-y-2">
+      <!-- Title + Edit -->
+      <div class="flex justify-between items-start w-full">
+        <p class="text-lg font-semibold">Indian Institute of Information Technology</p>
+        <img src="assets/edit.png" alt="edit1" class="w-5 h-5 cursor-pointer" />
+      </div>
+
+      <p>Bachelor of Technology - B.Tech, CSE</p>
+      <p>Sep 2023 – Mar 2027</p>
+      <p>Grade – 8.00</p>
+
+      <p class="text-white/80">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed animi quidem dolores fuga velit asperiores
+        necessitatibus libero totam nulla earum deserunt, rerum nemo quasi impedit debitis nesciunt vero cum dicta!
+      </p>
+
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+
+      <!-- Tags + Share -->
+      <div class="flex justify-between items-center w-full mt-2">
+        <div class="flex gap-4 text-sm text-white/90">
+          <p>AI Focused Curriculum</p>
+          <p>Research-led Program</p>
+        </div>
+        <img src="assets/share.png" alt="share1" class="w-5 h-5 cursor-pointer" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Education Card 2 -->
+  <div class="flex items-start space-x-6">
+    <!-- College Logo -->
+    <div class="min-w-[80px]">
+      <img src="assets/alive_hire_logo.png" alt="college2" class="w-16 h-16 object-contain" />
+    </div>
+
+    <!-- Right Info -->
+    <div class="flex-1 space-y-2">
+      <!-- Title + Edit -->
+      <div class="flex justify-between items-start w-full">
+        <p class="text-lg font-semibold">Indian Institute of Information Technology</p>
+        <img src="assets/edit.png" alt="edit2" class="w-5 h-5 cursor-pointer" />
+      </div>
+
+      <p>Bachelor of Technology - B.Tech, CSE</p>
+      <p>Sep 2023 – Mar 2027</p>
+      <p>Grade – 8.00</p>
+
+      <p class="text-white/80">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed animi quidem dolores fuga velit asperiores
+        necessitatibus libero totam nulla earum deserunt, rerum nemo quasi impedit debitis nesciunt vero cum dicta!
+      </p>
+
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+
+      <!-- Tags + Share -->
+      <div class="flex justify-between items-center w-full mt-2">
+        <div class="flex gap-4 text-sm text-white/90">
+          <p>AI Focused Curriculum</p>
+          <p>Research-led Program</p>
+        </div>
+        <img src="assets/share.png" alt="share2" class="w-5 h-5 cursor-pointer" />
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--section 3-->
+<div class="relative left-[30px] top-[-200px] max-w-[1770px] p-8 rounded-2xl bg-[#2AB5DC] bg-opacity-20 backdrop-blur-xl border border-white/20 text-white mt-[100px]">
+  
+  <!-- Section Title -->
+  <p class="text-2xl font-semibold mb-4">Skill stack</p>
+  <hr class="border-white/30 mb-6" />
+
+<!-- Section Title -->
+<p class="text-2xl font-semibold mb-4">Languages</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">Frameworks & Libraries</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">Frtend Technologieson</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">Backend Technologies</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">Databases</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">Cloud/DevOps</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">Tools & Others</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+
+<p class="text-2xl font-semibold mb-4">CoreSkills/Top 5 Highlights</p>
+
+<!-- Language skill row: spaced evenly -->
+<div class="flex flex-wrap justify-between items-center gap-y-4">
+
+  <!-- Skill 1 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/c_prog.png" alt="C" class="w-6 h-6" />
+    <div>C</div>
+  </div>
+
+  <!-- Skill 2 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/cpp.png" alt="Cpp" class="w-6 h-6" />
+    <div>Cpp</div>
+  </div>
+
+  <!-- Skill 3 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/python.png" alt="Python" class="w-6 h-6" />
+    <div>Python</div>
+  </div>
+
+  <!-- Skill 4 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/javascript.png" alt="JavaScript" class="w-6 h-6" />
+    <div>JS</div>
+  </div>
+
+  <!-- Skill 5 -->
+  <div class="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg">
+    <img src="assets/php.png" alt="PHP" class="w-6 h-6" />
+    <div>PHP</div>
+  </div>
+
+</div>
+</div>
+
+<!--section 4-->
+<!-- Outer flex container with padding -->
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Graphic Design Artist</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Mentored 50+ underprivileged students in basic programming</p>
+      <p>Ahouba IIITM</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Outer flex container with padding -->
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Graphic Design Artist</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Mentored 50+ underprivileged students in basic programming</p>
+      <p>Ahouba IIITM</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--section-5-->
+
+
+<!-- Outer flex container with padding -->
+<div class="flex gap-8 items-start p-1 rounded-xl ">
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Graphic Design Artist</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Mentored 50+ underprivileged students in basic programming</p>
+      <p>Ahouba IIITM</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Outer flex container with padding -->
+<div class="flex gap-8 items-start p-6 rounded-xl ">
+
+  <!-- Left Image -->
+  <div class="w-[250px]">
+    <img src="assets/sec_five.png" alt="dec" class="w-full object-cover rounded-md" />
+  </div>
+
+  <!-- Right Content -->
+  <div class="flex-1 space-y-4">
+
+    <!-- Title + Edit icon -->
+    <div class="flex items-center justify-between">
+      <p class="text-xl font-semibold">Graphic Design Artist</p>
+      <img src="assets/edit.png" alt="edit3" class="w-5 h-5 cursor-pointer" />
+    </div>
+
+    <!-- Description & Details -->
+    <div class="space-y-1 text-white/90 text-sm leading-relaxed">
+      <p>Mentored 50+ underprivileged students in basic programming</p>
+      <p>Ahouba IIITM</p>
+      <p>Feb 2025 – Mar 2025</p>
+      <p>
+        I personally designed the official tech fest logo, which became the face of the event. I also created posters, banners,
+        brochures, and pamphlets to promote the …see more
+      </p>
+      <a href="https://iiitmanipur.ac.in/" class="text-blue-300 underline block">https://iiitmanipur.ac.in/</a>
+    </div>
+
+    <!-- Two camera boxes side by side -->
+    <div class="flex gap-4 mt-4">
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+      <div class="w-24 h-24 bg-white/10 flex items-center justify-center rounded-md p-2">
+        <img src="assets/camera.png" alt="camera" class="w-6 h-6" />
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+    </div>
+  </div>
+</body>
+</html>
